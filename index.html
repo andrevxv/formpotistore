@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa Loja Potistore</title>
+  </head>
+  <body>
+    <h1 id="title">Pesquisa Loja Potistore</h1>
+    <p id="description">
+      Formulário de pesquisa avaliar a satisfação das nossas clientes.
+    </p>
+    <form
+      action="https://formsubmit.co/victorvale1@hotmail.com"
+      method="POST"
+      id="survey-form"
+      enctype="multipart/form-data"
+    >
+      <fieldset>
+        <label id="name-label"
+          >Nome:
+          <input
+            id="name"
+            type="text"
+            name="nome"
+            required
+            placeholder="Insira seu nome"
+        /></label>
+        <label id="email-label"
+          >E-mail:
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Insira seu E-mail"
+        /></label>
+        <label id="number-label"
+          >Idade:
+          <input
+            id="number"
+            type="number"
+            min="13"
+            max="120"
+            placeholder="Insira sua idade"
+            name="idade"
+        /></label>
+      </fieldset>
+      <fieldset>
+        Como você conheceu a Loja Potistore?
+        <select id="dropdown" name="conheceu">
+          <option value="">(selecione uma opcão)</option>
+          <option value="instagram">Instagram</option>
+          <option value="facebook">Facebook</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="google">Google</option>
+          <option value="recomendacao">Recomendação de amigo(a)</option>
+          <option value="outra">Outra forma</option>
+        </select>
+        <label
+          >Recomendaria a Loja Potistore?<br />
+          <input
+            id="sim"
+            type="radio"
+            name="recomendaria"
+            value="sim"
+            class="inline"
+          />
+          Sim</label
+        >
+        <label
+          ><input
+            id="nao"
+            type="radio"
+            name="recomendaria"
+            value="nao"
+            class="inline"
+          />
+          Não</label
+        >
+      </fieldset>
+      <fieldset>
+        Quais produtos mais te interessam?
+        <label
+          ><input
+            name="interesse"
+            type="checkbox"
+            value="maquiagem"
+            class="inline"
+          />Maquiagens</label
+        >
+        <label
+          ><input
+            name="interesse2"
+            type="checkbox"
+            value="acessoriomaq"
+            class="inline"
+          />Acessórios de maquiagem</label
+        >
+        <label
+          ><input
+            name="interesse3"
+            type="checkbox"
+            value="skincare"
+            class="inline"
+          />Produtos de skincare</label
+        >
+        <label
+          ><input
+            name="interesse4"
+            type="checkbox"
+            value="joiabiju"
+            class="inline"
+          />Joias/Bijuterias</label
+        >
+        <label
+          ><input
+            name="interesse5"
+            type="checkbox"
+            value="outros"
+            class="inline"
+          />Outros</label
+        >
+      </fieldset>
+      <fieldset>
+        Deixe abaixo sua avaliação sobre o seu pedido ou alguma sugestão de
+        produto ou melhoria:
+        <textarea
+          cols="30"
+          rows="5"
+          placeholder="Digite aqui"
+          name="avaliacao"
+        ></textarea>
+        <label
+          >Envie uma imagem com o produto (opcional): <input type="file"
+          name="imagem"" /></label
+        >
+        <label><input type="submit" id="submit" value="Enviar" /></label>
+      </fieldset>
+      <input type="hidden" name="_captcha" value="false" />
+    </form>
+  </body>
+  <footer>
+    Feito com ♥ pela
+    <a href="https://lojapotistore.com.br" target="_blank">Loja Potistore</a>
+  </footer>
+</html>
